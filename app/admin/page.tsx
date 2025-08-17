@@ -10,7 +10,7 @@ import { toast } from 'sonner'
 
 export default function AdminPage() {
   const [loading, setLoading] = useState(true)
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState<User | null>(null)
   const router = useRouter()
 
   const handleSignOut = async () => {
